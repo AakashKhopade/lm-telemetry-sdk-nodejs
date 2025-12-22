@@ -22,13 +22,13 @@ const exporter = new OTLPTraceExporter({
 });
 ```
 
-If you are exporting directly to the LogicMonitor platform, assuming your company name is `mycompany` and your Bearer token is `N2dDODRpZks5M3ZoMkRhdXB4cG06WnlKQStSbmEzMXRXVlBCT0lHQ05GZz09`, your config would be:
+If you are exporting directly to the LogicMonitor platform, assuming your company name is `mycompany` and your Bearer token is `<Your_Bearer_Token>`, your config would be:
 
 ```node
 const exporter = new OTLPTraceExporter({
 	url: 'https://mycompany.logicmonitor.com/rest/api/v1/traces',
 	headers: {
-	    Authorization: 'Bearer N2dDODRpZks5M3ZoMkRhdXB4cG06WnlKQStSbmEzMXRXVlBCT0lHQ05GZz09'
+	    Authorization: 'Bearer <Your_Bearer_Token>'
 	},
 });
 ```
